@@ -74,6 +74,8 @@ nav {
     text-align: center;
     font-size: 40px;
     font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .nav-links {
@@ -277,29 +279,40 @@ footer {
 
 
 /* Media Queries */
-/* width < 500px */
-@media screen and (max-width: 500px) {
-    .header-title {
-        font-size: 2rem;
+
+/* width < 1130px */
+@media screen and (max-width: 1130px) {
+    .quick-features-list {
+        flex-direction: column-reverse;
     }
 
-    .nav-links {
+    .quick-features-list .section-text-container {
+        text-align: center;
+        max-width: none;
+        padding-inline: 20px;
+    }
+
+    .features-overview {
+        flex-direction: column;
+        padding-inline: 30px;
+        padding-bottom: 60px;
+    }
+
+    .features-overview .section-text-container,
+    .features-overview .section-image-container {
+        width: auto;
+    }
+
+
+    .some-facts .section-header {
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .some-facts .facts-container {
         justify-content: space-evenly;
-        font-size: 0.8rem;
     }
 
-
-    .features-overview .experience {
-        padding: 25px 28px;
-    }
-
-    .features-overview .experience h4 {
-        font-size: 25px;
-    }
-
-    .features-overview .experience p {
-        font-size: 16px;
-    }
 }
 
 /* width < 800px */
@@ -341,37 +354,45 @@ footer {
 
 }
 
-/* width < 1130px */
-@media screen and (max-width: 1130px) {
-    .quick-features-list {
-        flex-direction: column-reverse;
+/* width < 500px */
+@media screen and (max-width: 500px) {
+    .btn-primary {
+        font-size: 1rem;
     }
 
-    .quick-features-list .section-text-container {
-        text-align: center;
-        max-width: none;
-        padding-inline: 20px;
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-desc {
+        line-height: 1.3rem;
+    }
+
+    .header-title {
+        font-size: 1.8rem;
+    }
+
+
+
+    .nav-links {
+        gap: 0;
+        justify-content: space-evenly;
+        font-size: 0.8rem;
     }
 
     .features-overview {
-        flex-direction: column;
-        padding-inline: 30px;
-        padding-bottom: 60px;
+        padding-inline: 0;
     }
 
-    .features-overview .section-text-container,
-    .features-overview .section-image-container {
-        width: auto;
+    .features-overview .experience {
+        padding: 25px 28px;
     }
 
-
-    .some-facts .section-header {
-        margin-inline: auto;
-        text-align: center;
+    .features-overview .experience h4 {
+        font-size: 25px;
     }
 
-    .some-facts .facts-container {
-        justify-content: space-evenly;
+    .features-overview .experience p {
+        font-size: 16px;
     }
-
 }
