@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>G3 Architects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <h1>G3 Architects</h1>
-        <ul>
+        <h1 class="page-title">G3 Architects</h1>
+        <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact Us</a></li>
@@ -18,9 +24,12 @@
         </ul>
       </nav>
 
-      <section class="top-contents">
+      <div class="top-contents">
         <div class="info-container">
-          <h3 class="haeder-title">Brand New Group of Architects</h3>
+          <h3 class="header-title">
+            Brand New
+            <span>Group of Architects</span>
+          </h3>
           <p class="section-desc">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
@@ -31,7 +40,7 @@
         <div class="header-image">
           <img src="assets/banner.png" alt="banner" />
         </div>
-      </section>
+      </div>
     </header>
 
     <!-- Main Section Contents -->
@@ -49,7 +58,7 @@
             <!-- t stands for text -->
             <span class="t-quick-list">Quick list</span>
             <span class="t-of-our">of Our</span>
-            <span class="-features">Features</span>
+            <span class="t-features">Features</span>
           </h3>
 
           <p class="section-desc">
@@ -65,47 +74,51 @@
 
       <section class="features-overview">
         <div class="section-text-container">
-          <header>
-            <h3 class="section-title">Features you will love & enjoy</h3>
+          <div class="section-header">
+            <h3 class="section-title">
+              Features you will <span>Love & Enjoy</span>
+            </h3>
 
             <p class="section-desc">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour, or random words which don't look even
             </p>
-          </header>
+          </div>
 
-          <div class="feature-item">
-            <h4>Desktop & Mobile Version</h4>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or random...........
-            </p>
-          </div>
-          <div class="feature-item">
-            <h4>Drag & Drop Builder</h4>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or random...........
-            </p>
-          </div>
-          <div class="feature-item">
-            <h4>Awesome Modern Design</h4>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or random...........
-            </p>
-          </div>
-          <div class="feature-item">
-            <h4>Super Easy to Edit</h4>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or random...........
-            </p>
+          <div class="feature-items-conainer">
+            <div class="feature-item">
+              <h4>Desktop & Mobile Version</h4>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or random...........
+              </p>
+            </div>
+            <div class="feature-item">
+              <h4>Drag & Drop Builder</h4>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or random...........
+              </p>
+            </div>
+            <div class="feature-item">
+              <h4>Awesome Modern Design</h4>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or random...........
+              </p>
+            </div>
+            <div class="feature-item">
+              <h4>Super Easy to Edit</h4>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or random...........
+              </p>
+            </div>
           </div>
         </div>
 
@@ -120,13 +133,13 @@
 
       <!-- Some Facts -->
       <section class="some-facts">
-        <header>
+        <div class="section-header">
           <h3 class="section-title">Some Facts</h3>
           <p class="section-desc">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>
-        </header>
+        </div>
 
         <div class="facts-container">
           <div class="fact">
@@ -153,14 +166,14 @@
       </section>
 
       <!-- Sponsors -->
-      <section class="sponsors">
-        <header>
+      <section class="our-sponsors">
+        <div class="section-header">
           <h3 class="section-title">Our Sponsors</h3>
           <p class="section-desc">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration.
           </p>
-        </header>
+        </div>
         <div class="sponsors-container">
           <img src="assets/sponsors/spotify.png" alt="Sponsor Icon" />
           <img src="assets/sponsors/amazon.png" alt="Sponsor Icon" />
